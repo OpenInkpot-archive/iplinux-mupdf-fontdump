@@ -1,0 +1,15 @@
+Source: mupdf-fontdump
+Section: host/tools
+Maintainer: Alexander Kerner <lunohod@openinkpot.org>
+Build-Depends: debhelper, jam | ftjam, pkg-config, libfreetype6-dev, libjpeg62-dev
+XCS-Cross-Host-Build-Depends: debhelper, jam | ftjam, pkg-config
+XCS-Cross-Build-Depends: libfreetype6-dev, libjpeg62-dev
+Priority: optional
+Standards-Version: 3.8.0
+
+Package: mupdf-fontdump
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: MuPDF fontdump utility
+ MuPDF is a lightweight PDF viewer and toolkit written in portable C.
+ Native fontdump and cmapdump utilities are required for cross-compiling MuPDF.
